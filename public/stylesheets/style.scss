@@ -1,6 +1,20 @@
+// FONTS 
+//=============================
+
+@import url('https://fonts.googleapis.com/css?family=Khula:400,800');
+
+
+//=============================
+
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Khula', sans-serif;
+}
+
+section {
+  padding: 0 20px;
 }
 
 a {
@@ -9,4 +23,74 @@ a {
 
 img {
   width: 50px;
+}
+
+footer {
+  height: 300 px;
+  background-color: black;
+  color: white;
+}
+
+footer p {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+// CARDS 
+//=============================
+
+
+// SESSION HOME SCREEN
+
+#sessions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#sessions h2,
+p {
+  line-height: 0px;
+}
+
+.card-session {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: aliceblue;
+  border-radius: 25px;
+  width: 90%;
+  line-height: 5px;
+  margin-bottom: 25px;
+}
+
+.session-content-right {
+  padding-left: 10px;
+  border-left: 1px solid black;
+}
+
+.session-content-left {
+  padding-right: 20px;
+}
+
+.session-content-left img {
+  width: 40px;
+  padding-bottom: 5px;
+
+}
+
+#section-player {
+  background-color: black;
+  height: 100vh;
+  color: white;
+}
+
+h2 {
+  padding-top: 50px;
+}
+
+#section-sport {
+  background-color: white;
+  height: 100vh;
 }
