@@ -13,6 +13,7 @@ const userSchema = new Schema(
     //   type: String,
     //   enum: ["Beginner", "Intermediate", "Confirmed", "Expert"]
     // },
+    favourites: { type: Array },
     role: {
       type: String,
       required: true,

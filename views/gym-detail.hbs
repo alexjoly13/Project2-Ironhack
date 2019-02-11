@@ -6,15 +6,13 @@
 <p>Address: {{gymItem.address}}, {{gymItem.arrondissement}}</p>
 <p>Metro Stop: {{gymItem.metroStop}}</p> <img src="{{gymItem.metroLine}}" alt="">
 <p>Telephone: {{gymItem.phone}}</p>
+<p>Sports Available :</p>
 <ul>
-  <p>Sports Available :</p>
   {{#each gymItem.sports}}
   <li>
     {{this}}
     {{/each}}
-    <p>Disabled Access: {{gymItem.disabledAccess}}</p>
   </li>
-  <iframe src="{{gymItem.map}}" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-
 </ul>
+<p>Disabled Access: {{gymItem.disabledAccess}}</p>
+<iframe src="{{gymItem.map}}" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>

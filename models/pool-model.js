@@ -14,6 +14,10 @@ const poolSchema = new Schema(
     phone: { type: String },
     activities: { type: Array, required: true },
     entryPrice: { type: Number, required: true },
+    poolLength: { type: String },
+    poolWidth: { type: String },
+    poolBoard: { type: String },
+    situation: { type: String },
     disabledAccess: { type: String }
   },
   {
@@ -22,6 +26,6 @@ const poolSchema = new Schema(
   }
 );
 
-const SwimmingPools = mongoose.model("Swimming-pools", poolSchema);
+const SwimmingPools = mongoose.model("swimming-pools", poolSchema);
 
 module.exports = SwimmingPools;

@@ -57,4 +57,7 @@ app.use("/", index);
 const gyms = require("./routes/gym-router.js");
 app.use("/", gyms);
 
+const pools = require("./routes/pool-router.js");
+app.use("/", pools);
+
 module.exports = app;
