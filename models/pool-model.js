@@ -10,6 +10,7 @@ const poolSchema = new Schema(
     metroStop: { type: String },
     metroLine: { type: String },
     arrondissement: { type: Number, required: true },
+    map: { type: String },
     phone: { type: String },
     activities: { type: Array, required: true },
     entryPrice: { type: Number, required: true },

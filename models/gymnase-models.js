@@ -10,6 +10,7 @@ const gymnaseSchema = new Schema(
     metroStop: { type: String },
     metroLine: { type: String },
     arrondissement: { type: Number, required: true },
+    map: { type: String },
     phone: { type: String },
     sports: { type: Array, required: true },
     disabledAccess: { type: String }
