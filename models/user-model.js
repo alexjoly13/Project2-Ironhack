@@ -14,6 +14,7 @@ const userSchema = new Schema(
     //   enum: ["Beginner", "Intermediate", "Confirmed", "Expert"]
     // },
     favourites: { type: Array },
+    lessonsPlanned: { type: Array },
     role: {
       type: String,
       required: true,
@@ -28,6 +29,6 @@ const userSchema = new Schema(
 );
 
 // "User" model ---> "users" collection
-const User = mongoose.model("User", userSchema);
+const User = mongoose.model("users", userSchema);
 
 module.exports = User;
