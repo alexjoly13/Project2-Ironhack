@@ -1,0 +1,18 @@
+<h2>Gym List</h2>
+
+<ul>
+  {{#each gymArray}}
+  <li>
+    <h3>{{this.name}}</h3>
+    <p>Address: {{this.address}}, {{this.arrondissement}}</p>
+    <p>Metro Stop: {{this.metroStop}}</p> <img src="{{this.metroLine}}" alt="">
+    <p>Telephone: {{this.phone}}</p>
+  </li>
+</ul>
+<ul>
+  <li>
+    Sports available : {{this.sports}}
+    <p>Disabled Access: {{this.disabledAccess}}</p>
+  </li>
+  {{/each}}
+</ul>
