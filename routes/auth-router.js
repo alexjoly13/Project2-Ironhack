@@ -134,4 +134,8 @@ router.get("/logout", (req, res, next) => {
   res.redirect("/");
 });
 
+router.get("/map", (req, res, next) => {
+  res.render("map.hbs");
+});
+
 module.exports = router;
