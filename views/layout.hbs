@@ -51,21 +51,28 @@
 
 
       <ul id="menu">
-        <a href="#">
-          <li>Home</li>
-        </a>
-        <a href="#">
-          <li>About</li>
-        </a>
-        <a href="#">
-          <li>Info</li>
-        </a>
-        <a href="#">
-          <li>Contact</li>
-        </a>
-        <a href="https://erikterwan.com/" target="_blank">
-          <li>Show me more</li>
-        </a>
+        {{#if currentUser}}
+        <li>
+          <a href="/gym-list"></a>Browse Gyms</a>
+        </li>
+        <li>
+          <a href="/pool-list">Browse Swimming Pools</a>
+        </li>
+        <li>
+          <a href="/park-list">Browse Skateparks</a>
+        </li>
+        <li>
+          <a href="/logout">Log Out</a>
+        </li>
+        {{else}}
+        <li>
+          <a href="/login">Log In</a>
+        </li>
+        <li>
+          <a href="/signup">Sign Up</a>
+        </li>
+        {{/if}}
+
       </ul>
     </div>
   </nav>
