@@ -19,6 +19,7 @@ const userSchema = new Schema(
       type: String,
       match: /^https?:\/\//
     },
+    sports: { type: Array },
     favourites: { type: Array },
     lessonsPlanned: { type: Array },
     friends: { type: Array },

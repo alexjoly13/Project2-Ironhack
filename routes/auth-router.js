@@ -30,17 +30,34 @@ router.post("/process-signup", (req, res, next) => {
   // encrypt the user's password before saving
   const encryptedPassword = bcrypt.hashSync(originalPassword, 10);
 
-  User.create({ userName, fullName, email, encryptedPassword, birthDate })
-    .then(() => {
+  User.create({ userName, fullName, email, encryptedPassword, birthDate }).then(
+    userDoc => {
       // req.flash sends a feedback message before a redirect
       // (it's defined by the "connect-flash" npm package)
       req.flash("success", "Sign up success !");
+      req
+        .logIn(userDoc, () => {
+          // req.flash sends a feedback message before a redirect
+          // (it's defined by the "connect-flash" npm package)
+          req.flash("success", "You are logged in !");
 
-      // redirect to the HOME PAGE if the sign up WORKED
-      res.redirect("/");
-    })
-    .catch(err => next(err));
+          // redirect to the HOME PAGE if the sign up WORKED
+          res.redirect("/signup-sports");
+        })
+        .catch(err => next(err));
+    }
+  );
 });
+
+router.get("/signup-sports", (req, res, next) => {
+  res.render("auth-views/signup-sports.hbs");
+});
+
+// router.post("/process-sports-signup", (req, res, next) => {
+//   const { mySports } = req.body;
+
+//   User.
+// });
 
 // LOGIN PROCESS
 // --------------------------------------------------------------------------------------------------
