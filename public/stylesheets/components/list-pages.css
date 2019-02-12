@@ -1,0 +1,79 @@
+.heading-list {
+  height: 40vh;
+  position: relative;
+  top: -60px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: -5vh;
+  margin-top: -3vh;
+}
+
+.body-list li h3 {
+  color: white;
+  font-size: 2em;
+  line-height: 1em;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.body-list li p {
+  color: white;
+  font-size: 1em;
+  line-height: 1em;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* BACKGROUNDS FOR HEADERS */
+
+.gym-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.4) 70%),
+    url("../../images/home/tennis.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.pool-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.4) 70%),
+    url("../../images/home/find-buddy.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.gym-card li {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.4) 70%),
+    url("../../images/lists-pages/gym.jpg");
+  background-position: center center;
+  background-size: cover;
+  width: 80%;
+  margin-bottom: 20px;
+  padding: 20px;
+  color: white;
+  border-radius: 15px;
+}
+
+.pool-card li {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.4) 70%),
+    url("../../images/lists-pages/swim.jpeg");
+  background-position: center center;
+  background-size: cover;
+  width: 80%;
+  margin-bottom: 20px;
+  padding: 20px;
+  color: white;
+  border-radius: 15px;
+}

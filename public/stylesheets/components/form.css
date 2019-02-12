@@ -1,0 +1,12 @@
+.form-header {
+  width: 100%
+}
+
+.form-header h2 {
+  text-align: center;
+  color: silver
+}
+
+.form-header span {
+  color: tomato
+}

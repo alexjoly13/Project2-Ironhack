@@ -1,11 +1,17 @@
-<h2>Gym List</h2>
+<section class="heading-list gym-bg">
 
-<ul>
-  {{#each gymArray}}
-  <li>
-    <h3>{{this.name}}</h3>
-    <p>Address: {{this.address}}, {{this.arrondissement}}</p>
-    <a href="/gym-list/{{this._id}}">See More</a>
-    {{/each}}
-  </li>
-</ul>
+  <h2>Gym List</h2>
+
+</section>
+
+<section>
+  <ul class="body-list gym-card">
+    {{#each gymArray}}
+    <li>
+      <h3>{{this.name}}</h3>
+      <p>Address: {{this.address}}, {{this.arrondissement}}</p>
+      <a href="/gym-list/{{this._id}}">See More</a>
+      {{/each}}
+    </li>
+  </ul>
+</section>

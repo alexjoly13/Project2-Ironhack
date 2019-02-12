@@ -1,11 +1,19 @@
-<h2>Pools List</h2>
+<section class="heading-list pool-bg">
 
-<ul>
-  {{#each poolArray}}
-  <li>
-    <h3>{{this.name}}</h3>
-    <p>Address: {{this.address}}, {{this.arrondissement}}</p>
-    {{!-- <p>Metro Stop: {{this.metroStop}}</p> <img src="{{this.metroLine}}" alt=""> --}}
-    {{!-- <p>Telephone: {{this.phone}}</p> --}}
-    <a href="/pool-list/{{this._id}}">See More</a>
-    {{/each}}
+  <h2>Pools List</h2>
+
+</section>
+
+<section>
+  <ul class="body-list pool-card">
+    {{#each poolArray}}
+    <li>
+      <h3>{{this.name}}</h3>
+      <p>Address: {{this.address}}, {{this.arrondissement}}</p>
+      {{!-- <p>Metro Stop: {{this.metroStop}}</p> <img src="{{this.metroLine}}" alt=""> --}}
+      {{!-- <p>Telephone: {{this.phone}}</p> --}}
+      <a href="/pool-list/{{this._id}}">See More</a>
+      {{/each}}
+    </li>
+  </ul>
+</section>
