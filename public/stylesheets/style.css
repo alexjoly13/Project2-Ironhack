@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,900");
 @import url("./components/cards.css");
+@import url("./components/btn.css");
 body {
   padding: 50px;
   margin: 0;
@@ -7,7 +8,8 @@ body {
   font-family: 'Raleway', sans-serif; }
 
 section {
-  padding: 0 20px; }
+  padding: 0 7%;
+  padding-bottom: 5vh; }
 
 a {
   color: #00b7ff; }
@@ -36,17 +38,34 @@ small {
   font-weight: bolder;
   color: silver;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  padding-top: 25px; }
 
 #section-player {
   background-image: url("../images/home/find-buddy.jpg");
   background-size: cover;
   background-position: center center;
-  min-height: 100vh;
   color: white; }
 
-#section-sport {
-  height: 100vh; }
+#section-article {
+  color: white;
+  background-image: url("../images/home/tennis.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 70vh;
+  position: relative; }
+
+#section-article p {
+  position: absolute;
+  bottom: 50px;
+  width: 80%; }
+
+#reinsurance {
+  padding-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center; }
 
 .error-message {
   border: 3px solid;

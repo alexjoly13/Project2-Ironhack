@@ -87,9 +87,11 @@
 
 .badge {
   background-color: tomato;
-  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
   height: 80px;
   margin: 10px;
-  border-radius: 5px;
-
+  border-radius: 15px;
 }
