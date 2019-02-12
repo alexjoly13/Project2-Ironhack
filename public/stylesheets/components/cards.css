@@ -1,0 +1,95 @@
+/* UNIVERSAL CARDS SETTINGS */
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards-container h2 {
+  line-height: 0px;
+}
+
+.month {
+  color: silver;
+  line-height: 10px;
+}
+
+/* CARDS HOME SESSIONS */
+
+.card-session {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: aliceblue;
+  border-radius: 25px;
+  width: 90%;
+  line-height: 5px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.session-content-right {
+  padding-left: 10px;
+  border-left: 1px solid silver;
+}
+
+.session-content-left {
+  padding-right: 20px;
+}
+
+.session-content-left img {
+  width: 40px;
+  padding-bottom: 5px;
+}
+
+/* CARDS HOME PLAYER */
+
+.card-player {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fefefe;
+  border-radius: 25px;
+  width: 80%;
+  margin-bottom: 10px;
+  margin-left: 10%;
+  margin-top: 10px;
+  color: black;
+  position: relative;
+}
+
+.card-player img {
+  position: absolute;
+  left: -50px;
+  width: 80px;
+}
+
+.player-content-left {
+  max-width: 40%;
+  padding-left: 30px;
+}
+
+.player-content-left p {
+  line-height: 1.2em;
+  font-size: 0.8em;
+}
+
+/* BADGES HOME SPORTS */
+
+.badges-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.badge {
+  background-color: tomato;
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+  border-radius: 5px;
+
+}

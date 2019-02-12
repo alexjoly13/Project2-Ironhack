@@ -1,7 +1,9 @@
 // FONTS 
 //=============================
 
-@import url('https://fonts.googleapis.com/css?family=Khula:400,800');
+// @import url('https://fonts.googleapis.com/css?family=Khula:400,800');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,900');
+@import url("./components/cards.css");
 
 
 //=============================
@@ -10,7 +12,7 @@ body {
   padding: 50px;
   margin: 0;
   padding: 0;
-  font-family: 'Khula', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 section {
@@ -36,61 +38,35 @@ footer p {
   text-align: center;
 }
 
-// CARDS 
-//=============================
-
-
-// SESSION HOME SCREEN
-
-#sessions {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#sessions h2,
-p {
-  line-height: 0px;
-}
-
-.card-session {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: aliceblue;
-  border-radius: 25px;
-  width: 90%;
-  line-height: 5px;
-  margin-bottom: 25px;
-}
-
-.session-content-right {
-  padding-left: 10px;
-  border-left: 1px solid black;
-}
-
-.session-content-left {
-  padding-right: 20px;
-}
-
-.session-content-left img {
-  width: 40px;
-  padding-bottom: 5px;
-
-}
-
-#section-player {
-  background-color: black;
-  height: 100vh;
-  color: white;
-}
-
 h2 {
   padding-top: 50px;
 }
 
+h4 {
+  font-size: 1.2em;
+  line-height: 0px;
+}
+
+small {
+  text-align: center;
+  font-weight: bolder;
+  color: silver;
+  display: flex;
+  justify-content: center;
+}
+
+
+// HOME Ids
+//=============================
+
+#section-player {
+  background-image: url('../images/home/find-buddy.jpg');
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+  color: white;
+}
+
 #section-sport {
-  background-color: white;
   height: 100vh;
 }
