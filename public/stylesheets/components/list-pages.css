@@ -59,6 +59,7 @@
   background-position: center center;
   background-size: cover;
   width: 80%;
+  max-width: 500px;
   margin-bottom: 20px;
   padding: 20px;
   color: white;
@@ -72,6 +73,7 @@
   background-position: center center;
   background-size: cover;
   width: 80%;
+  max-width: 500px;
   margin-bottom: 20px;
   padding: 20px;
   color: white;

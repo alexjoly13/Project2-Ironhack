@@ -1,6 +1,13 @@
-.form-header {
-  width: 100%
+.sec-form {
+  min-height: 70vh;
+
 }
+
+.form-header {
+  height: 20vh;
+
+}
+
 
 .form-header h2 {
   text-align: center;
@@ -9,4 +16,34 @@
 
 .form-header span {
   color: tomato
+}
+
+
+label {
+  display: block;
+  font-weight: bolder;
+  color: #616161;
+  min-height: 10vh;
+}
+
+input {
+  border: 1px solid tomato;
+  border-radius: 25px;
+  padding: 15px 20px;
+  width: 85%;
+  max-width: 500px;
+}
+
+form button {
+  background-color: tomato;
+  padding: 15px 20px;
+  border-radius: 25px;
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+  text-align: center;
+  width: 95%;
+  max-width: 500px;
+  border: none;
+  margin-top: 25px
 }
