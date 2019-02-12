@@ -1,0 +1,50 @@
+.details-header {
+  height: 70vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.4) 70%),
+    url("../../images/home/tennis.jpg");
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  top: -50px;
+}
+
+.details-header h2 {
+  color: white;
+  position: absolute;
+  bottom: 15%;
+  right: 5%;
+  font-size: 2em;
+  text-align: right;
+}
+
+.details-header p {
+  color: white;
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+  font-size: 1em;
+  text-align: right;
+}
+
+.details-list li {
+  list-style-type: none;
+  margin-left: -40px;
+}
+
+.details-list h3 {
+  font-size: 1.5em;
+  line-height: 0.5em;
+}
+
+.go-back {
+  position: absolute;
+  bottom: 7%;
+  right: 5%;
+}
+
+.flex-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

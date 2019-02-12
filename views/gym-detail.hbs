@@ -1,18 +1,32 @@
-<a href="/gym-list">Go back to the list</a>
+<section class="details-header">
 
-<h2>{{gymItem.name}}</h2>
+  <h2>{{gymItem.name}}</h2>
+  <p>{{gymItem.address}}, {{gymItem.arrondissement}}</p>
+  <a class="btn-main" href="#0">Book a Session</a>
+  <a class="go-back" href="/gym-list"> -- Go back to the list</a>
+</section>
 
+<section>
 
-<p>Address: {{gymItem.address}}, {{gymItem.arrondissement}}</p>
-<p>Metro Stop: {{gymItem.metroStop}}</p> <img src="{{gymItem.metroLine}}" alt="">
-<p>Telephone: {{gymItem.phone}}</p>
-<p>Sports Available :</p>
-<ul>
-  {{#each gymItem.sports}}
-  <li>
-    {{this}}
+  <ul class="details-list">
+    {{#each gymItem.sports}}
+    <li>
+      <h3>{{this}}</h3>
+    </li>
     {{/each}}
-  </li>
-</ul>
-<p>Disabled Access: {{gymItem.disabledAccess}}</p>
-<iframe src="{{gymItem.map}}" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </ul>
+  <hr>
+  <div class="flex-line">
+    <p><b>Metro Stop:</b> {{gymItem.metroStop}}</p>
+    <img src="{{gymItem.metroLine}}" alt="">
+  </div>
+  <p><b>Telephone:</b> {{gymItem.phone}}</p>
+
+
+  <p><b>Disabled Access:</b> {{gymItem.disabledAccess}}</p>
+  <hr>
+  <h4>Location:</h4>
+
+  <iframe src="{{gymItem.map}}" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+</section>

@@ -2,6 +2,9 @@
 @import url("./components/cards.css");
 @import url("./components/btn.css");
 @import url("./components/nav.css");
+@import url("./components/list-pages.css");
+@import url("./components/details-pages.css");
+@import url("./components/form.css");
 body {
   padding: 50px;
   margin: 0;
@@ -13,7 +16,7 @@ section {
   padding-bottom: 5vh; }
 
 a {
-  color: #00b7ff; }
+  color: silver; }
 
 img {
   width: 50px; }
@@ -48,6 +51,9 @@ small {
   position: absolute;
   top: 10%;
   right: 5%; }
+
+label {
+  display: block; }
 
 #section-header {
   height: 70vh;
