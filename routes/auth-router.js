@@ -53,11 +53,16 @@ router.get("/signup-sports", (req, res, next) => {
   res.render("auth-views/signup-sports.hbs");
 });
 
-// router.post("/process-sports-signup", (req, res, next) => {
-//   const { mySports } = req.body;
-
-//   User.
-// });
+router.post("/process-sports-signup", (req, res, next) => {
+  const sport = req.body;
+  const newUser = req.user._id;
+  User.findByIdAndUpdate(newUser, { sports: sport })
+    .then(() => {
+      req.flash("success", "Sports added successfully !");
+      res.redirect("/");
+    })
+    .catch(err => next(err));
+});
 
 // LOGIN PROCESS
 // --------------------------------------------------------------------------------------------------
