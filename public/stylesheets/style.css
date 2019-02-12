@@ -48,4 +48,16 @@ small {
 #section-sport {
   height: 100vh; }
 
+.error-message {
+  border: 3px solid;
+  border-radius: 5px;
+  color: tomato;
+  padding: 10px; }
+
+.success-message {
+  border: 3px solid;
+  border-radius: 3px;
+  color: chartreuse;
+  padding: 10px; }
+
 /*# sourceMappingURL=style.css.map */

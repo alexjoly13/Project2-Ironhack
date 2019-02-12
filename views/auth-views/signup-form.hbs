@@ -1,21 +1,31 @@
 <h2>Sign Up</h2>
 
-{{!-- {{> flash_messages}} --}}
+{{> flash_messages}}
 
 <form action="/process-signup" method="POST">
+  <label>
+    Your Username (3 characters or more):
+    <input type="text" name="userName" placeholder="Leia Organa" minlength="3" required>
+  </label>
+
   <label>
     Your Full Name (2 characters or more):
     <input type="text" name="fullName" placeholder="Leia Organa" minlength="2" required>
   </label>
 
   <label>
-    Email (something@something.com):
+    Email:
     <input type="email" name="email" placeholder="Leia@resistance.com" required>
   </label>
 
   <label>
     Password (must contain a digit 0-9):
     <input type="password" name="originalPassword" placeholder="Secret Password" required>
+  </label>
+
+  <label>
+    Date of Birth:
+    <input type="date" name="birthDate" placeholder="12/12/1900" required>
   </label>
 
   <button>Sign Up</button>

@@ -13,12 +13,7 @@
   <header>
     <nav>
       <ul>
-        <li>
-          <a href="/login">Log In</a>
-        </li>
-        <li>
-          <a href="/signup">Sign Up</a>
-        </li>
+        {{#if currentUser}}
         <li>
           <a href="/gym-list">Browse Gyms</a>
         </li>
@@ -28,6 +23,17 @@
         <li>
           <a href="/park-list">Browse Skateparks</a>
         </li>
+        <li>
+          <a href="/logout">Log Out</a>
+        </li>
+        {{else}}
+        <li>
+          <a href="/login">Log In</a>
+        </li>
+        <li>
+          <a href="/signup">Sign Up</a>
+        </li>
+        {{/if}}
       </ul>
     </nav>
   </header>

@@ -1,4 +1,4 @@
-// FONTS 
+// FONTS
 //=============================
 
 // @import url('https://fonts.googleapis.com/css?family=Khula:400,800');
@@ -69,4 +69,21 @@ small {
 
 #section-sport {
   height: 100vh;
+}
+
+// FLASH MESSAGES
+//=============================
+
+.error-message {
+  border: 3px solid;
+  border-radius: 5px;
+  color: tomato;
+  padding: 10px;
+}
+
+.success-message {
+  border: 3px solid;
+  border-radius: 3px;
+  color: chartreuse;
+  padding: 10px;
 }
