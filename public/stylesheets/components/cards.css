@@ -12,7 +12,7 @@
 }
 
 .month {
-  color: silver;
+  color: darkgrey;
   line-height: 10px;
 }
 
@@ -21,9 +21,9 @@
 .card-session {
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  background-color: aliceblue;
-  border-radius: 25px;
+  /* align-items: center; */
+  background-color: tomato;
+  border-radius: 15px;
   width: 90%;
   line-height: 5px;
   margin-bottom: 10px;
@@ -35,9 +35,19 @@
   border-left: 1px solid silver;
 }
 
+.session-content-right p {
+  font-size: 0.8em
+}
+
+
 .session-content-left {
   padding-right: 20px;
 }
+
+.session-content-left p {
+  font-size: 0.8em
+}
+
 
 .session-content-left img {
   width: 40px;
@@ -51,7 +61,7 @@
   justify-content: space-around;
   align-items: center;
   background-color: #fefefe;
-  border-radius: 25px;
+  border-radius: 15px;
   width: 80%;
   margin-bottom: 10px;
   margin-left: 10%;

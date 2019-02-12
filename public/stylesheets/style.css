@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,900");
 @import url("./components/cards.css");
 @import url("./components/btn.css");
+@import url("./components/nav.css");
 body {
   padding: 50px;
   margin: 0;
   padding: 0;
-  font-family: 'Raleway', sans-serif; }
+  font-family: "Raleway", sans-serif; }
 
 section {
   padding: 0 7%;
@@ -41,21 +42,44 @@ small {
   justify-content: center;
   padding-top: 25px; }
 
+.logo-main {
+  width: 60%;
+  max-width: 400px;
+  position: absolute;
+  top: 10%;
+  right: 5%; }
+
+#section-header {
+  height: 70vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.4) 70%), url("../images/home/tennis.jpg");
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  top: -50px; }
+
+#section-header h2 {
+  color: white;
+  position: absolute;
+  bottom: 15%; }
+
+#section-header span {
+  color: tomato; }
+
 #section-player {
-  background-image: url("../images/home/find-buddy.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.3) 70%), url("../images/home/find-buddy.jpg");
   background-size: cover;
   background-position: center center;
   color: white; }
 
 #section-article {
   color: white;
-  background-image: url("../images/home/tennis.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 50%), url("../images/home/tennis.jpg");
   background-size: cover;
   background-position: center center;
   height: 70vh;
   position: relative; }
 
-#section-article p {
+.article-subheader {
   position: absolute;
   bottom: 50px;
   width: 80%; }
@@ -63,7 +87,7 @@ small {
 #reinsurance {
   padding-top: 70px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   text-align: center; }
 
