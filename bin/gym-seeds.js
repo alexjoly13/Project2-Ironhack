@@ -24,16 +24,9 @@ const gyms = [
     metroStop: "Porte de St-Ouen",
     metroLine: "/images/metro-lines/ligne13.svg",
     map:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2622.8649799578343!2d2.323137451493192!3d48.89891030570479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f00285a6dd3%3A0xb5bab9d7841377b5!2sComplexe+Sportif+Max+Roussi%C3%A9!5e0!3m2!1sfr!2sfr!4v1549881698334",
-    phone: "01 44 85 42 50",
-    sports: [
-      "Handball",
-      "Badminton",
-      "Basket-Ball",
-      "Volley-Ball",
-      "Gym Hall",
-      "Martial Arts Room"
-    ],
+      "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2622.9864603667806!2d2.325129!3d48.8965952!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e5563432201%3A0xd4291eb393927f1d!2sGymnase+Jean+Leclaire!5e0!3m2!1sfr!2sfr!4v1549881426778",
+    phone: "01 49 29 22 44",
+    sports: ["Badminton", "Basket-Ball", "Volley-Ball", "Archery"],
     disabledAccess: "No"
   },
   {
