@@ -17,7 +17,9 @@ const passport = require("passport");
 require("./config/passport-setup.js");
 
 mongoose
-  .connect("mongodb://localhost/sports", { useNewUrlParser: true })
+  .connect("mongodb://localhost/sports", {
+    useNewUrlParser: true
+  })
   .then(x => {
     console.log(
       `Connected to Mongo! Database name: "${x.connections[0].name}"`
@@ -37,7 +39,9 @@ const app = express();
 // Middleware Setup
 app.use(logger("dev"));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({
+  extended: false
+}));
 app.use(cookieParser());
 
 // Express View engine setup
@@ -67,7 +71,9 @@ app.use(
     // secret should be a string that's different for every app
     secret: "ca^khT8KYd,G73C7R9(;^atb?h>FTWdbn4pqEFUKs3",
     // store session data inside our MongoDB with the "connect-mongo" package
-    store: new MongoStore({ mongooseConnection: mongoose.connection })
+    store: new MongoStore({
+      mongooseConnection: mongoose.connection
+    })
   })
 );
 
@@ -107,5 +113,9 @@ app.use("/", gyms);
 
 const pools = require("./routes/pool-router.js");
 app.use("/", pools);
+
+const rdv = require("./routes/rdv-router.js");
+app.use("/", rdv);
+
 
 module.exports = app;

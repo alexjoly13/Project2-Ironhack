@@ -1,9 +1,34 @@
 const express = require('express');
-const router  = express.Router();
+const router = express.Router();
+const Rdv = require("../models/rdv-model.js");
 
 /* GET home page */
 router.get('/', (req, res, next) => {
-  res.render('index');
-});
+
+  if (!req.user) {
+    req.flash("error", "only admins can do that");
+    res.redirect("/login");
+    return;
+  }
+
+  Rdv.find({
+      //filter the rooms owned by the logged in user
+      host: {
+        $eq: req.user._id
+      }
+    })
+    //sort by newest
+    .sort({
+      createdAt: -1
+    })
+    //first 10 results
+    .limit(10)
+    .then(rdvResults => {
+      res.locals.rdvArray = rdvResults;
+      res.render('index.hbs');
+    })
+    .catch(err => next(err));
+})
+
 
 module.exports = router;

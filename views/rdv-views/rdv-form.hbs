@@ -1,0 +1,51 @@
+<h2>Create a new RDV</h2>
+
+<section>
+  <form autocomplete="off" action="/process-rdv" method="POST">
+
+    {{!-- <div class="autocomplete" style="width:300px;"> --}}
+    <label>
+      Location:
+      <input id="locationInput" type="text" name="location" placeholder="Roland Garos" required />
+    </label>
+    {{!-- </div> --}}
+
+    <label>
+      Date:
+      <input type="date" name="date" required />
+    </label>
+
+    <label>
+      Time:
+      <input type="time" name="time" required />
+    </label>
+
+    <div class="autocomplete" style="width:300px;">
+      <label for="">
+        Sport:
+        <input id="myInput" type="text" name="sport" placeholder="Type a Sport">
+      </label>
+    </div>
+
+    {{!-- <label>
+    Guest:
+    <input type="text" name="guest" placeholder="Roland Garos" required />
+  </label> --}}
+
+    <label>
+      Level:
+      <select name="level">
+        <option value="Beginner">Beginner</option>
+        <option value="Intermediate">Intermediate</option>
+        <option value="Confirmed">Confirmed</option>
+        <option value="Expert">Expert</option>
+      </select>
+    </label>
+
+
+    <button>Save This Room</button>
+  </form>
+
+</section>
+{{!-- <script src="/javascripts/rdv-location.js"></script> --}}
+<script src="/javascripts/signup-sports.js"></script>

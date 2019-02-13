@@ -2,7 +2,7 @@
   <div>
     <img class="logo-main" src="./images/logos/logo-main-blanc.png" alt="">
     <h2>Choose your <span>SPØRTS</span><br />Choose your <span>BUDDIES</span></h2>
-    <a class="btn-header" href="#0">+</a>
+    <a class="btn-header" href="/create-rdv">+</a>
   </div>
 </section>
 <section>
@@ -13,7 +13,7 @@
   <div class="cards-container">
     <div class="card-session">
       <div class="session-content-left">
-        <h3>Roland Garos</h3>
+        <h3>HARD CODED</h3>
         <p>Tennis with @AlexJoly</p>
         <img src="./images/user-icon/alex.png" alt="" />
       </div>
@@ -24,21 +24,11 @@
       </div>
     </div>
 
-    <div class="card-session">
-      <div class="session-content-left">
-        <h3>Roland Garos</h3>
-        <p>Tennis with @AlexJoly</p>
-        <img src="./images/user-icon/alex.png" alt="" />
-        <img src="./images/user-icon/alex.png" alt="" />
-
-      </div>
-      <v class="session-content-right">
-        <h4>Tues. 12</h4>
-        <p class="month"><b>January</b></p>
-        <p>4pm - 6pm</p>
-    </div>
-
-
+    {{#if currentUser}}
+    {{> rdv_card}}
+    {{else}}
+    {{> home_logout_session}}
+    {{/if}}
   </div>
   <small>see more</small>
 </section>

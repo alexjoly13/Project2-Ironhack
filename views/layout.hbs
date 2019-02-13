@@ -10,75 +10,53 @@
 </head>
 
 <body>
-  {{!-- <header>
-    <nav>
-      <ul>
-        {{#if currentUser}}
-        <li>
-          <a href="/gym-list">Browse Gyms</a>
-        </li>
-        <li>
-          <a href="/pool-list">Browse Swimming Pools</a>
-        </li>
-        <li>
-          <a href="/park-list">Browse Skateparks</a>
-        </li>
-        <li>
-          <a href="/logout">Log Out</a>
-        </li>
-        {{else}}
-        <li>
-          <a href="/login">Log In</a>
-        </li>
-        <li>
-          <a href="/signup">Sign Up</a>
-        </li>
-        {{/if}}
-      </ul>
+
+  <header>
+    <nav role="navigation">
+      <div id="menuToggle">
+
+        <input type="checkbox" />
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+
+        <ul id="menu">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          {{#if currentUser}}
+          <li>
+            <a href="/gym-list">Gyms</a>
+          </li>
+          <li>
+            <a href="/pool-list">Swimming Pools</a>
+          </li>
+          <li>
+            <a href="/park-list">Skateparks</a>
+          </li>
+          <li>
+            <a href="/my-rdv">My Sessions</a>
+          </li>
+          <li>
+            <a href="/logout">Log Out</a>
+          </li>
+
+
+          {{else}}
+          <li>
+            <a href="/login">Log In</a>
+          </li>
+          <li>
+            <a href="/signup">Sign Up</a>
+          </li>
+          {{/if}}
+
+        </ul>
+      </div>
     </nav>
-  </header> --}}
-
-
-
-  <nav role="navigation">
-    <div id="menuToggle">
-
-      <input type="checkbox" />
-
-      <span></span>
-      <span></span>
-      <span></span>
-
-
-      <ul id="menu">
-        <li>
-          <a href="/">Home</a>
-        </li>
-        {{#if currentUser}}
-        <li>
-          <a href="/gym-list">Browse Gyms</a>
-        </li>
-        <li>
-          <a href="/pool-list">Browse Swimming Pools</a>
-        </li>
-        <li>
-          <a href="/park-list">Browse Skateparks</a>
-        </li>
-        <li>
-          <a href="/logout">Log Out</a>
-        </li>
-        {{else}}
-        <li>
-          <a href="/login">Log In</a>
-        </li>
-        <li>
-          <a href="/signup">Sign Up</a>
-        </li>
-        {{/if}}
-
-      </ul>
-    </div>
-  </nav>
+  </header>
 
   {{{body}}}
 

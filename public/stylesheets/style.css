@@ -22,9 +22,9 @@ img {
   width: 50px; }
 
 footer {
-  height: 300 px;
   background-color: black;
-  color: white; }
+  color: white;
+  margin: 0; }
 
 footer p {
   padding: 50px 20px;
