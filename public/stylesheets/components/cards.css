@@ -5,15 +5,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.cards-container h2 {
-  line-height: 0px;
+  line-height: 1em;
 }
 
 .month {
   color: darkgrey;
-  line-height: 10px;
+  line-height: 1em;
 }
 
 /* CARDS HOME SESSIONS */
@@ -24,8 +21,8 @@
   /* align-items: center; */
   background-color: tomato;
   border-radius: 15px;
-  width: 90%;
-  line-height: 5px;
+  width: 100%;
+  line-height: 1em;
   margin-bottom: 10px;
   margin-top: 10px;
 }
@@ -33,6 +30,12 @@
 .session-content-right {
   padding-left: 10px;
   border-left: 1px solid silver;
+  width: 100px;
+  font-size: 1.2em;
+}
+
+.session-content-right .hour {
+  font-size: 1.2em;
 }
 
 .session-content-right p {
@@ -42,6 +45,8 @@
 
 .session-content-left {
   padding-right: 20px;
+  padding-left: 10px;
+
 }
 
 .session-content-left p {

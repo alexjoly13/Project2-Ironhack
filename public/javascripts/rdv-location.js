@@ -105,32 +105,10 @@ function autocomplete(inp, arr) {
 }
 
 /*An array containing all the country names in the world:*/
-const sports = [
-  "Basket-Ball",
-  "Volley-Ball",
-  "Handball",
-  "Boxing",
-  "Football",
-  "Cycling",
-  "Swimming",
-  "Aquagym",
-  "Badminton",
-  "Tennis",
-  "Archery",
-  "Gymnastics",
-  "Skateboarding",
-  "Karate",
-  "Judo",
-  "Fencing",
-  "Climbing",
-  "Fitness",
-  "Mini-Basket",
-  "Billiard",
-  "Dancing",
-  "Racket-Ball",
-  ""
+const location = [
+  "Roland Garros",
+  "Maurice Papon"
+
 ];
-
-
-/*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
-autocomplete(document.getElementById("myInput"), sports);
+/*initiate the autocomplete function on the "locationInput" element, and pass along the countries array as possible autocomplete values:*/
+autocomplete(document.getElementById("locationInput"), location);

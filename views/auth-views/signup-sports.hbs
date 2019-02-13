@@ -1,12 +1,23 @@
-<h1>Welcome</h1>
+<section class="sec-form">
+  <div class="form-header">
+    <h2>Welcome</h2>
 
-<h2>Please Select a Sport</h2>
-
-<form autocomplete="off" action="/process-sports-signup" method="POST">
-  <div class="autocomplete" style="width:300px;">
-    <input id="myInput" type="text" name="mySport" placeholder="Type a Sport">
   </div>
-  <button>Validate</button>
-</form>
+
+  <h3>Please Select a Sport</h3>
+
+  <form autocomplete="off" action="/process-sports-signup" method="POST">
+    <div class="autocomplete" style="width:300px;">
+      <input id="myInput" type="text" name="mySport" placeholder="Type a Sport">
+    </div>
+    <label for="">
+      <br />
+      About:
+      <input type="text" name="" placeholder="Tell us more" />
+    </label>
+    <button>Validate</button>
+  </form>
+</section>
+
 
 <script src="/javascripts/signup-sports.js"></script>
