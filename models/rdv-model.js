@@ -34,9 +34,12 @@ const rdvSchema = new Schema({
     ref: 'User',
     required: true
   },
-  guests: {
-    type: Array,
+  userIcon: {
+    type: String,
   },
+  // guests: {
+  //   type: Array,
+  // },
   level: {
     type: String,
     enum: ["Beginner", "Intermediate", "Confirmed", "Expert"],

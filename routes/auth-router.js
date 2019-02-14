@@ -193,24 +193,5 @@ router.get("/buddies-list", (req, res, next) => {
 
 })
 
-router.get("/", (req, res, next) => {
-
-  User.find()
-
-    .sort({
-      createdAt: -1
-    })
-
-    .limit(5)
-    .then(userResults => {
-
-      // res.json(userResults)
-      res.locals.userArray = userResults;
-      res.render("buddies/buddies-list.hbs");
-    })
-    .catch(err => next(err))
-
-})
-
 
 module.exports = router;

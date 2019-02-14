@@ -1,18 +1,17 @@
-<section id="section-player">
-  {{#each userArray}}
-  <div class="card-player">
-    <img src="{{this.pictureUrl}}" alt="" />
+{{#each userArray}}
+<div class="card-player">
+  <img src="{{this.pictureUrl}}" alt="" />
 
-    <div class="player-content-left">
-      <h3>{{this.userName}}</h3>
-      <h4>{{this.sports}}</h4>
-      <p>{{this.description}}</p>
-    </div>
-    <div class="player-content-right">
-
-      {{!-- <p class="month"><b>January</b></p>
-    <p>4pm - 6pm</p> --}}
-    </div>
+  <div class="player-content-left">
+    <h3>{{this.userName}}</h3>
+    <h4>{{this.sports}}</h4>
+    <p>{{this.description}}</p>
   </div>
-  {{/each}}
-</section>
+  <div class="player-content-right">
+
+    <form action="/add-guest" method="POST">
+      <button>GO</button>
+    </form>
+  </div>
+</div>
+{{/each}}

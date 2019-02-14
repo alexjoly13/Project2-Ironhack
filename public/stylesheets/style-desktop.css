@@ -1,0 +1,18 @@
+.card-session {
+  width: 30%;
+  margin: 10px;
+}
+
+.cards-container {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start
+}
+
+.card-player {
+  width: 40%
+}
+
+.desktop-list {
+  margin-left: 7%
+}

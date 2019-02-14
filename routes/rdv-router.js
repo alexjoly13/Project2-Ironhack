@@ -22,7 +22,7 @@ router.get("/create-rdv", (req, res, next) => {
 });
 
 
-//CREAT RDV
+// CREATE RDV
 // ======================
 router.post("/process-rdv", (req, res, next) => {
 
@@ -36,6 +36,7 @@ router.post("/process-rdv", (req, res, next) => {
   } = req.body;
 
   const host = req.user._id;
+  const userIcon = req.user.pictureUrl;
   const dayToFormat = moment(date).format("dddd");
   const formatedDay = dayToFormat.slice(0, 3);
   const formatedDayNum = moment(date).format("DD");
@@ -52,7 +53,9 @@ router.post("/process-rdv", (req, res, next) => {
       time,
       sport,
       level,
-      host
+      host,
+      userIcon,
+      // guests,
     })
     .then(() => {
       req.flash('success', "RDV created successfully")
@@ -97,6 +100,7 @@ router.get("/my-rdv", (req, res, next) => {
 
 })
 
+// /add-guest
 
 
 // EXPORT

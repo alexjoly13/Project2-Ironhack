@@ -77,10 +77,8 @@ small {
 //=============================
 #section-header {
   height: 70vh;
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.5) 0%,
-      rgba(0, 0, 0, 0.4) 70%
-    ),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.4) 70%),
     url("../images/home/tennis.jpg");
   background-size: cover;
   background-position: center center;
@@ -99,10 +97,8 @@ small {
 }
 
 #section-player {
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.5) 0%,
-      rgba(0, 0, 0, 0.3) 70%
-    ),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.3) 70%),
     url("../images/home/find-buddy.jpg");
   background-size: cover;
   background-position: center center;
@@ -111,10 +107,8 @@ small {
 
 #section-article {
   color: white;
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.4) 0%,
-      rgba(0, 0, 0, 0.2) 50%
-    ),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.2) 50%),
     url("../images/home/tennis.jpg");
   background-size: cover;
   background-position: center center;
@@ -138,10 +132,8 @@ small {
 
 .climb {
   color: white;
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.4) 0%,
-      rgba(0, 0, 0, 0.2) 50%
-    ),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.2) 50%),
     url("../images/article/climbing.jpg");
   background-size: cover;
   background-position: center center;
@@ -149,7 +141,7 @@ small {
   position: relative;
 }
 
-.h4climb {
+.climb h4 {
   padding-top: 30px;
 }
 
@@ -174,6 +166,8 @@ small {
 //=============================
 
 #map {
-  height: 700px; /* The height is 400 pixels */
-  width: 100%; /* The width is the width of the web page */
+  height: 700px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
 }

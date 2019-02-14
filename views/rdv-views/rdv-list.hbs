@@ -4,24 +4,10 @@
   {{!-- <a class="go-back" href="/"> -- Homepage</a> --}}
 </section>
 
-{{> rdv_card}}
+<section>
+  <div class="cards-container desktop-list">
 
-{{!-- <ul>
-  {{#each rdvArray}}
+    {{> rdv_card}}
 
-  <div class="card-session">
-    <div class="session-content-left">
-      <h3>{{this.location}}</h3>
-      <p>{{this.sport}} with @AlexJoly</p>
-      <img src="./images/user-icon/alex.png" alt="" />
-    </div>
-    <div class="session-content-right">
-      <p class="month"><b>{{this.formatedMonth}}</b></p>
-      <h4>{{this.formatedDay}}. {{this.formatedDayNum}}</h4>
-      <p class="hour">{{this.time}}</p>
-
-    </div>
   </div>
-
-  {{/each}}
-</ul> --}}
+</section>
