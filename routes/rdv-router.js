@@ -84,7 +84,14 @@ router.get("/my-rdv", (req, res, next) => {
       res.locals.rdvArray = rdvResults;
       res.render("rdv-views/rdv-list.hbs");
     })
-    .catch(err => next(err));
+    .catch(err => next(err))
+
+  // User.find()
+  //   .then(userResults => {
+  //     res.locals.userArray = userResults
+  //     res.render('rdv-views/rdv-list.hbs')
+  //   })
+  //   .catch(err => next(err))
 })
 
 

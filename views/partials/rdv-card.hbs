@@ -4,7 +4,7 @@
   <div class="session-content-left">
     <h3>{{this.location}}</h3>
     <p>{{this.sport}} with @AlexJoly</p>
-    <img src="./images/user-icon/alex.png" alt="" />
+
   </div>
   <div class="session-content-right">
     <p class="month"><b>{{this.formatedMonth}}</b></p>
@@ -14,4 +14,8 @@
   </div>
 </div>
 
+{{/each}}
+
+{{#each userInfo}}
+<img class="profile-pic" src="{{this.pictureUrl}}" alt="pic" />
 {{/each}}
