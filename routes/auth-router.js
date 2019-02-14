@@ -1,8 +1,7 @@
 const express = require("express");
 const bcrypt = require("bcrypt");
-
 const User = require("../models/user-model.js");
-
+const fileUploader = require("../config/file-upload.js")
 const router = express.Router();
 
 router.get("/signup", (req, res, next) => {
@@ -12,8 +11,14 @@ router.get("/signup", (req, res, next) => {
 // SIGN-UP PROCESS
 // --------------------------------------------------------------------------------------------------
 
-router.post("/process-signup", (req, res, next) => {
-  const { userName, fullName, email, originalPassword, birthDate } = req.body;
+router.post("/process-signup", fileUploader.single("pictureUpload"), (req, res, next) => {
+  const {
+    userName,
+    fullName,
+    email,
+    originalPassword,
+    birthDate
+  } = req.body;
 
   // enforce password rules
   if (!originalPassword || !originalPassword.match(/[0-9]/)) {
@@ -29,8 +34,17 @@ router.post("/process-signup", (req, res, next) => {
 
   // encrypt the user's password before saving
   const encryptedPassword = bcrypt.hashSync(originalPassword, 10);
+  const pictureUrl = req.file.secure_url;
 
-  User.create({ userName, fullName, email, encryptedPassword, birthDate }).then(
+
+  User.create({
+    userName,
+    fullName,
+    email,
+    encryptedPassword,
+    birthDate,
+    pictureUrl
+  }).then(
     userDoc => {
       // req.flash sends a feedback message before a redirect
       // (it's defined by the "connect-flash" npm package)
@@ -56,7 +70,9 @@ router.get("/signup-sports", (req, res, next) => {
 router.post("/process-sports-signup", (req, res, next) => {
   const sport = req.body;
   const newUser = req.user._id;
-  User.findByIdAndUpdate(newUser, { sports: sport })
+  User.findByIdAndUpdate(newUser, {
+      sports: sport
+    })
     .then(() => {
       req.flash("success", "Sports added successfully !");
       res.redirect("/");
@@ -72,10 +88,17 @@ router.get("/login", (req, res, next) => {
 });
 
 router.post("/process-login", (req, res, next) => {
-  const { email, originalPassword } = req.body;
+  const {
+    email,
+    originalPassword
+  } = req.body;
 
   // validate the email by searching the datanase for an account with that email
-  User.findOne({ email: { $eq: email } })
+  User.findOne({
+      email: {
+        $eq: email
+      }
+    })
     .then(userDoc => {
       // User.findOne() will give us NULL in userDoc if it found nothing
       if (!userDoc) {
@@ -89,7 +112,9 @@ router.post("/process-login", (req, res, next) => {
         return;
       }
 
-      const { encryptedPassword } = userDoc;
+      const {
+        encryptedPassword
+      } = userDoc;
 
       // validate the password by using bcrypt.compareSync()
       if (!bcrypt.compareSync(originalPassword, encryptedPassword)) {

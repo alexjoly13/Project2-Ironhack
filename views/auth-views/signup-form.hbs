@@ -5,7 +5,7 @@
 
   {{> flash_messages}}
 
-  <form action="/process-signup" method="POST">
+  <form action="/process-signup" method="POST" enctype="multipart/form-data">
     <label>
       Your Username (3 characters or more):
       <input type="text" name="userName" placeholder="Leia Organa" minlength="3" required>
@@ -29,6 +29,11 @@
     <label>
       Date of Birth:
       <input type="date" name="birthDate" placeholder="12/12/1900" required>
+    </label>
+
+    <label>
+      Picture :
+      <input type="file" name="pictureUpload" placeholder="https://example.com/profile-pic.jpg" required />
     </label>
 
     <button>Sign Up</button>
