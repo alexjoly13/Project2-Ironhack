@@ -25,6 +25,8 @@ function initMap() {
     ["Gymnase Le Vau", 48.8706506, 2.4107272]
   ];
 
+  // Icon
+
   // Info window content
   var infoWindowContent = [
     [

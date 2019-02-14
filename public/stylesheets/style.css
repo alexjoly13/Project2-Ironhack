@@ -94,6 +94,17 @@ small {
   align-items: center;
   text-align: center; }
 
+.climb {
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 50%), url("../images/article/climbing.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 70vh;
+  position: relative; }
+
+.h4climb {
+  padding-top: 30px; }
+
 .error-message {
   border: 3px solid;
   border-radius: 5px;
