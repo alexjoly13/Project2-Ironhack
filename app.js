@@ -39,9 +39,11 @@ const app = express();
 // Middleware Setup
 app.use(logger("dev"));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({
-  extended: false
-}));
+app.use(
+  bodyParser.urlencoded({
+    extended: false
+  })
+);
 app.use(cookieParser());
 
 // Express View engine setup
@@ -116,6 +118,5 @@ app.use("/", pools);
 
 const rdv = require("./routes/rdv-router.js");
 app.use("/", rdv);
-
 
 module.exports = app;
