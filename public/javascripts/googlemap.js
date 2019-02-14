@@ -26,6 +26,7 @@ function initMap() {
   ];
 
   // Icon
+  var badIcon = "/images/map-icons/badminton.png";
 
   // Info window content
   var infoWindowContent = [
@@ -35,7 +36,7 @@ function initMap() {
         '<div id="bodyContent">' +
         "<h4>22 rue Jean Leclaire<h4>" +
         "<h4>75017 PARIS</h4>" +
-        `<a href="/gym-list/5c61649e2af14b1f18515b79"<p>See More<p></a>` +
+        `<a href="/gym-list/5c6590a5792e65000445c759"<p>See More<p></a>` +
         "</div>"
     ],
     [
@@ -44,7 +45,7 @@ function initMap() {
         '<div id="bodyContent">' +
         "<h4>28 rue Max Rousié<h4>" +
         "<h4>75017 PARIS</h4>" +
-        `<a href="/gym-list/5c61649e2af14b1f18515b7a"<p>See More<p></a>` +
+        `<a href="/gym-list/5c6590a5792e65000445c75a"<p>See More<p></a>` +
         "</div>"
     ],
     [
@@ -53,7 +54,7 @@ function initMap() {
         '<div id="bodyContent">' +
         "<h4>12 rue des Amiraux<h4>" +
         "<h4>75018 PARIS</h4>" +
-        `<a href="/gym-list/5c61649e2af14b1f18515b7e"<p>See More<p></a>` +
+        `<a href="/gym-list/5c6590a5792e65000445c762"<p>See More<p></a>` +
         "</div>"
     ],
     [
@@ -62,7 +63,7 @@ function initMap() {
         '<div id="bodyContent">' +
         "<h4>12 rue de la Goutte d'Or<h4>" +
         "<h4>75018 PARIS</h4>" +
-        `<a href="/gym-list/5c61649e2af14b1f18515b81"<p>See More<p></a>` +
+        `<a href="/gym-list/5c6590a5792e65000445c761"<p>See More<p></a>` +
         "</div>"
     ],
     [
@@ -71,7 +72,7 @@ function initMap() {
         '<div id="bodyContent">' +
         "<h4>28 rue Edgar Faure<h4>" +
         "<h4>75015 PARIS</h4>" +
-        `<a href="/gym-list/5c61649e2af14b1f18515b86"<p>See More<p></a>` +
+        `<a href="/gym-list/5c6590a5792e65000445c766"<p>See More<p></a>` +
         "</div>"
     ],
     [
@@ -80,7 +81,7 @@ function initMap() {
         '<div id="bodyContent">' +
         "<h4>9 rue Jean Rey<h4>" +
         "<h4>75015 PARIS</h4>" +
-        `<a href="/gym-list/5c61649e2af14b1f18515b87"<p>See More<p></a>` +
+        `<a href="/gym-list/5c6590a5792e65000445c767"<p>See More<p></a>` +
         "</div>"
     ],
     [
@@ -89,7 +90,7 @@ function initMap() {
         '<div id="bodyContent">' +
         "<h4>27 rue de la Lancette<h4>" +
         "<h4>75012 PARIS</h4>" +
-        `<a href="/gym-list/5c61649e2af14b1f18515b8b"<p>See More<p></a>` +
+        `<a href="/gym-list/5c6590a5792e65000445c76b"<p>See More<p></a>` +
         "</div>"
     ],
     [
@@ -98,7 +99,7 @@ function initMap() {
         '<div id="bodyContent">' +
         "<h4>15 rue de la Nouvelle-Calédonie<h4>" +
         "<h4>75012 PARIS</h4>" +
-        `<a href="/gym-list/5c61649e2af14b1f18515b8d"<p>See More<p></a>` +
+        `<a href="/gym-list/5c6590a5792e65000445c76d"<p>See More<p></a>` +
         "</div>"
     ],
     [
@@ -107,7 +108,7 @@ function initMap() {
         '<div id="bodyContent">' +
         "<h4>11 rue Candie<h4>" +
         "<h4>75011 PARIS</h4>" +
-        `<a href="/gym-list/5c61649e2af14b1f18515b8f"<p>See More<p></a>` +
+        `<a href="/gym-list/5c6590a5792e65000445c76f"<p>See More<p></a>` +
         "</div>"
     ],
     [
@@ -116,7 +117,7 @@ function initMap() {
         '<div id="bodyContent">' +
         "<h4>2 rue Japy<h4>" +
         "<h4>75011 PARIS</h4>" +
-        `<a href="/gym-list/5c61649e2af14b1f18515b90"<p>See More<p></a>` +
+        `<a href="/gym-list/5c6590a5792e65000445c770"<p>See More<p></a>` +
         "</div>"
     ],
     [
@@ -125,7 +126,7 @@ function initMap() {
         '<div id="bodyContent">' +
         "<h4>22 rue Pajol<h4>" +
         "<h4>75018 PARIS</h4>" +
-        `<a href="/gym-list/5c61649e2af14b1f18515b92"<p>See More<p></a>` +
+        `<a href="/gym-list/5c6590a5792e65000445c772<p>See More<p></a>` +
         "</div>"
     ],
     [
@@ -134,7 +135,7 @@ function initMap() {
         '<div id="bodyContent">' +
         "<h4>33 rue Milton<h4>" +
         "<h4>75009 PARIS</h4>" +
-        `<a href="/gym-list/5c61649e2af14b1f18515b93"<p>See More<p></a>` +
+        `<a href="/gym-list/5c6590a5792e65000445c773"<p>See More<p></a>` +
         "</div>"
     ],
     [
@@ -143,7 +144,7 @@ function initMap() {
         '<div id="bodyContent">' +
         "<h4>24 rue Rochechouart<h4>" +
         "<h4>75009 PARIS</h4>" +
-        `<a href="/gym-list/5c61649e2af14b1f18515b94"<p>See More<p></a>` +
+        `<a href="/gym-list/5c6590a5792e65000445c774"<p>See More<p></a>` +
         "</div>"
     ],
     [
@@ -152,7 +153,7 @@ function initMap() {
         '<div id="bodyContent">' +
         "<h4>7 Avenue Paul Appell<h4>" +
         "<h4>75014 PARIS</h4>" +
-        `<a href="/gym-list/5c61649e2af14b1f18515b97"<p>See More<p></a>` +
+        `<a href="/gym-list/5c6590a5792e65000445c777"<p>See More<p></a>` +
         "</div>"
     ],
     [
@@ -161,7 +162,7 @@ function initMap() {
         '<div id="bodyContent">' +
         "<h4>7 rue Bretonneau<h4>" +
         "<h4>75020 PARIS</h4>" +
-        `<a href="/gym-list/5c61649e2af14b1f18515b99"<p>See More<p></a>` +
+        `<a href="/gym-list/5c6590a5792e65000445c779"<p>See More<p></a>` +
         "</div>"
     ],
     [
@@ -170,7 +171,7 @@ function initMap() {
         '<div id="bodyContent">' +
         "<h4>36 rue Le Vau<h4>" +
         "<h4>75020 PARIS</h4>" +
-        `<a href="/gym-list/5c61649e2af14b1f18515b9a"<p>See More<p></a>` +
+        `<a href="/gym-list/5c6590a5792e65000445c77a"<p>See More<p></a>` +
         "</div>"
     ]
   ];
@@ -186,7 +187,8 @@ function initMap() {
     marker = new google.maps.Marker({
       position: position,
       map: map,
-      title: markers[i][0]
+      title: markers[i][0],
+      icon: badIcon
     });
 
     // Add info window to marker
