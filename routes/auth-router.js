@@ -17,7 +17,8 @@ router.post("/process-signup", fileUploader.single("pictureUpload"), (req, res, 
     fullName,
     email,
     originalPassword,
-    birthDate
+    birthDate,
+    description
   } = req.body;
 
   // enforce password rules
@@ -43,7 +44,8 @@ router.post("/process-signup", fileUploader.single("pictureUpload"), (req, res, 
     email,
     encryptedPassword,
     birthDate,
-    pictureUrl
+    pictureUrl,
+    description
   }).then(
     userDoc => {
       // req.flash sends a feedback message before a redirect
@@ -68,10 +70,14 @@ router.get("/signup-sports", (req, res, next) => {
 });
 
 router.post("/process-sports-signup", (req, res, next) => {
-  const sport = req.body;
+  const {
+    sport
+  } = req.body;
   const newUser = req.user._id;
   User.findByIdAndUpdate(newUser, {
-      sports: sport
+      $set: {
+        sports: sport
+      }
     })
     .then(() => {
       req.flash("success", "Sports added successfully !");
@@ -162,5 +168,49 @@ router.get("/logout", (req, res, next) => {
 router.get("/map", (req, res, next) => {
   res.render("map.hbs");
 });
+
+
+// BUDDIES LIST :
+// --------------------------------------------------------------------------------------------------
+
+
+router.get("/buddies-list", (req, res, next) => {
+
+  User.find()
+
+    .sort({
+      createdAt: -1
+    })
+
+    .limit(10)
+    .then(userResults => {
+
+      // res.json(userResults)
+      res.locals.userArray = userResults;
+      res.render("buddies/buddies-list.hbs");
+    })
+    .catch(err => next(err))
+
+})
+
+router.get("/", (req, res, next) => {
+
+  User.find()
+
+    .sort({
+      createdAt: -1
+    })
+
+    .limit(5)
+    .then(userResults => {
+
+      // res.json(userResults)
+      res.locals.userArray = userResults;
+      res.render("buddies/buddies-list.hbs");
+    })
+    .catch(err => next(err))
+
+})
+
 
 module.exports = router;

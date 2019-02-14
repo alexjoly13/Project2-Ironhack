@@ -3,6 +3,7 @@
 const express = require("express");
 const bcrypt = require("bcrypt");
 const Rdv = require("../models/rdv-model.js");
+const User = require("../models/user-model.js");
 const moment = require('moment');
 const router = express.Router();
 
@@ -81,18 +82,21 @@ router.get("/my-rdv", (req, res, next) => {
     //first 10 results
     .limit(10)
     .then(rdvResults => {
+
+      // User.find()
+      //   .then(userResults => {
+      //     res.locals.userArray = userResults
+      //     res.render('rdv-views/rdv-list.hbs')
+      //   })
+      //   .catch(err => next(err))
+
       res.locals.rdvArray = rdvResults;
       res.render("rdv-views/rdv-list.hbs");
     })
     .catch(err => next(err))
 
-  // User.find()
-  //   .then(userResults => {
-  //     res.locals.userArray = userResults
-  //     res.render('rdv-views/rdv-list.hbs')
-  //   })
-  //   .catch(err => next(err))
 })
+
 
 
 // EXPORT
