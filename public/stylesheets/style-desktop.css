@@ -6,13 +6,22 @@
 .cards-container {
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start
+  justify-content: flex-start;
+  align-items: stretch;
 }
 
 .card-player {
-  width: 40%
+  width: 40%;
 }
 
 .desktop-list {
-  margin-left: 7%
+  margin-left: 7%;
+}
+
+section {
+  position: relative;
+}
+
+small {
+  display: none
 }

@@ -1,4 +1,4 @@
-{{#each userArray}}
+{{#each friendsArray}}
 <div class="card-player">
   <img src="{{this.pictureUrl}}" alt="" />
 
@@ -9,9 +9,6 @@
   </div>
   <div class="player-content-right">
 
-    <form action="/add-friends/{{this._id}}" method="POST">
-      <button>Add</button>
-    </form>
   </div>
 </div>
 {{/each}}
