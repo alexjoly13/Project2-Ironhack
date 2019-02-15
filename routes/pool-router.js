@@ -6,6 +6,9 @@ const router = express.Router();
 
 router.get("/pool-list", (req, res, next) => {
   SwimmingPools.find()
+    .sort({
+      arrondissement: 1
+    })
     .then(poolResults => {
       res.locals.poolArray = poolResults;
       res.render("pool-list.hbs");
