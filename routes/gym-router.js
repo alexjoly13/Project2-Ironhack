@@ -6,6 +6,9 @@ const router = express.Router();
 
 router.get("/gym-list", (req, res, next) => {
   Gymnase.find()
+    .sort({
+      arrondissement: 1
+    })
     .then(gymResults => {
       res.locals.gymArray = gymResults;
       res.render("gym-list.hbs");
