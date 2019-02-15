@@ -56,7 +56,7 @@ router.post("/process-rdv", (req, res, next) => {
   })
     .then(() => {
       req.flash("success", "RDV created successfully");
-      res.redirect("/my-rdv");
+      res.redirect("/");
     })
     .catch(err => next(err));
 });
@@ -92,9 +92,6 @@ router.get("/my-rdv", (req, res, next) => {
     })
     .catch(err => next(err));
 });
-
-
-
 
 // EXPORT
 // ======================
