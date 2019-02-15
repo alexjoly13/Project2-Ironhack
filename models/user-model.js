@@ -48,9 +48,10 @@ const userSchema = new Schema({
   lessonsPlanned: {
     type: Array
   },
-  friends: {
-    type: Array
-  },
+  friends: [{
+    type: Schema.Types.ObjectId,
+    ref: "users"
+  }],
   role: {
     type: String,
     required: true,

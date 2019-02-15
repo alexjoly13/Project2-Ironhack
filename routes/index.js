@@ -26,24 +26,23 @@ router.get("/", (req, res, next) => {
     .then(rdvResults => {
       // res.json(rdvResults)
       res.locals.rdvArray = rdvResults;
-      // res.render("index.hbs");
+
+      User.find()
+
+        .sort({
+          createdAt: -1
+        })
+
+        .limit(5)
+        .then(userResults => {
+
+          // res.json(userResults)
+          res.locals.userArray = userResults;
+          res.render("index.hbs");
+        })
+        .catch(err => next(err))
     })
     .catch(err => next(err));
-
-  User.find()
-
-    .sort({
-      createdAt: -1
-    })
-
-    .limit(5)
-    .then(userResults => {
-
-      // res.json(userResults)
-      res.locals.userArray = userResults;
-      res.render("index.hbs");
-    })
-    .catch(err => next(err))
 });
 
 module.exports = router;

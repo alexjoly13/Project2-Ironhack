@@ -80,7 +80,7 @@ router.get("/my-rdv", (req, res, next) => {
     })
     //sort by newest
     .sort({
-      createdAt: -1
+      createdAt: 1
     })
     //first 10 results
     .limit(10)
@@ -100,7 +100,8 @@ router.get("/my-rdv", (req, res, next) => {
 
 })
 
-// /add-guest
+
+
 
 
 // EXPORT
