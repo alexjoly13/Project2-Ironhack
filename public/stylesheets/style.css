@@ -65,6 +65,7 @@ small {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.4) 70%), url("../images/home/tennis.jpg");
   background-size: cover;
   background-position: center center;
+  background-attachment: fixed;
   position: relative;
   top: -50px; }
 
@@ -80,6 +81,7 @@ small {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.3) 70%), url("../images/home/find-buddy.jpg");
   background-size: cover;
   background-position: center center;
+  background-attachment: fixed;
   color: white; }
 
 #section-article {
